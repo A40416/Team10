@@ -1,0 +1,437 @@
+
+*{	
+	scroll-behavior: smooth;
+	color: white;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+nav{
+	position: fixed;
+	background-color: #ccc;
+	display: inline-block;
+	width: 100%;
+	height: 60px;
+	background: rgba(0, 0, 0, 0.8);
+}
+.header .logo{
+	float:left;
+	display: inline-flex;
+	padding-left: 60px;
+	text-align: center;
+	letter-spacing: 6px;
+}
+.header .logo h2{
+	font-size: 25px;
+	color: orange;
+	font-family: courier,arial,helvetica;
+	font-weight: 700;
+	margin: 15px 20px;
+	text-shadow: 5px 5px 10px rgb(250, 250, 250);
+}
+
+.header .menu ul {
+	float: right;
+	list-style: none;
+	margin-right: 150px;
+}
+.header .menu ul li {
+	position: relative;
+	float: left;
+	line-height:50px;
+}
+.header .menu ul li a{
+	display: list-item;
+	color:  white;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 0 15px;
+	margin: 5px 2px;
+}
+
+.header .menu >ul> li> a:hover{
+	border-radius: 10px;
+	background: rgb(0, 0, 0);
+	box-shadow: 0 0 5px rgba(255,217,102,0.9),
+				0 0 10px rgba(255,217,102,0.7),
+				0 0 15px rgba(255,217,102,0.5);
+	color: rgb(255,217,102);
+}
+.header .menu ul li {
+	
+}
+.header .menu ul li ul{
+	border-radius: 5px;;
+	position: absolute;
+	width: 200%;
+	background-color:rgba(0, 0, 0, 0.8) ;
+	opacity: 0;
+	visibility: hidden;
+	top: 70px;
+	transition: top .4s;
+}
+.header .menu ul li:hover >ul{
+	top:  60px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.header .menu ul li ul li a:hover {
+	color: rgba(255,217,102);
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.header .menu ul li ul li a{
+	display: list-item;
+	padding-left:  15px;
+	font-size: 14px;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+
+.content #trangchu{
+	height: 100vh;
+	width: 100%;
+
+}
+.content #trangchu{
+	background: url("/Users/Admin/.vscode/HTML_CSS/Temwork/1.jpg") top center/cover no-repeat;
+}
+.content {
+	background: linear-gradient(blue, white);
+
+}
+.content .slider{
+
+	margin: 60px;
+}
+.content #sukien{
+	height: 120vh;
+	width: 100%;
+}
+.content #sukien{
+	background: url("/Users/Admin/.vscode/HTML_CSS/Temwork/sukien1.png") top center/cover no-repeat;
+}
+.footer{
+	background: rgb(0,0,0);
+	width: 100%;
+	border-bottom: none;
+} 
+.footer .btn{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.footer .btn a{
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.footer h3 {
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+
+}
+
+#gioithieu{
+	height: 100vh;
+	width: 100%;
+	border: 3px solid black;
+}
+
+#sukien h1{
+	width: 100%;
+	color: #0D1A36;
+	font-family: cursive;
+	text-align: center;
+	letter-spacing: 8px;
+	padding-top: 40px;
+	text-shadow:  2px 2px 8px rgb(250, 250, 250),
+				5px 5px 10px rgb(250, 250, 250);
+}
+
+#sukien p{
+	position: absolute;
+}
+.slider{
+
+	width: 500px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img{
+	width: 500px;
+	height: 500px;
+}
+
+.navigation-manual{
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 140px;
+	justify-content: center;
+	display: flex;
+}
+
+.manual-btn{
+	margin-top: 60px;
+	border: 2px solid blue;
+	padding: 6px;
+	border-radius: 14px;
+	cursor: pointer;
+	transition: 1s;
+	margin-left: 20px;
+}
+
+
+.manual-btn:hover{
+	background: blue;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+.text{
+	margin-top: -450px;
+	margin-left: 600px;
+	padding-right: 20px;
+	padding-bottom: 200px;
+}
+.text h3{
+	font-family: serif;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.text p{
+	font-family: serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.gopy{
+	background: linear-gradient(blue,white);
+	padding-left: 450px;
+	height: 90vh;
+	text-align: center;
+	border: 3px solid white;
+}
+#gopy-box{
+	background-color: rgba(0,0,0,0.8);
+	width: 400px;
+	height: 400px;
+	box-sizing: border-box;
+	box-shadow: 0 40px 50px rgba(0,0,0, 0.4);
+	border-radius: 15px;
+	margin-top: 60px;
+
+}
+
+
+#gopy-box h1 {
+	text-align: center;
+	color:  rgb(255,217,102);
+	font-size: 35px;
+	line-height: 70px;
+	margin-bottom: 20px;
+}
+
+#data{
+	display: block;
+	color:  white;
+	margin: 0 30px;
+}
+
+
+#gopy-box .user-data input{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 16px;
+	border:  none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	color : #fff;
+	outline: none;
+	margin-bottom: 10px;
+}
+
+
+#gopy-box .user-data label {
+	position: absolute;
+	font-size: 16px;
+	top:0%;
+  	left: 20px;
+  	color: rgb(255,217,102);
+	font-size: 15px;
+  	transition: 0.5s;
+  	pointer-events: none;
+}
+
+#gopy-box .user-data{
+	box-sizing: border-box;
+	position: relative;
+	padding: 15px 0;
+	top: 0;
+	left: 0;
+}
+
+#gopy-box #submit-box{
+	position: absolute;
+	font-weight: 700;
+	cursor: pointer;
+}
+#opinion textarea{
+	margin-top: 20px;
+	background: transparent;
+	font-size: 18px;
+	margin-left: 10px;
+}
+#gopy-box  a{
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	padding: 20px 20px;
+	text-decoration: none;
+	color: rgb(255,217,102);
+	text-transform: uppercase;
+	transform: translate(-50%);
+	text-align: center;
+	transition: 0.5s;
+	letter-spacing: 5px;
+	font-size: 18px;
+	width: 100px;
+	overflow: hidden;
+
+}
+
+#gopy-box a:hover{
+	background-color: rgba(255,217,102,0.9);
+	color: #fff;
+	box-shadow: 0 0 10px  rgb(255,217,102),
+				0 0 20px  rgb(255,217,102),
+				0 0 40px  rgb(255,217,102),
+				0 0 80px  rgb(255,217,102),
+				0 0 160px  rgb(255,217,102);
+}
+
+#gopy-box  span {
+	display: block;
+	
+}
+
+#gopy-box  #s1{
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, rgb(255,217,102));
+	animation: anim1 1s linear infinite;
+}
+
+@keyframes anim1{
+	0%{
+		left: -100%;
+	}
+	50%,100%{
+		left: 100%;
+	}
+}
+
+
+
+#gopy-box #submit-box  #s2{
+	position: absolute;
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, rgb(255,217,102));
+	animation: anim2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+
+@keyframes anim2{
+	0% {
+    	top: -100%;
+  	}
+  	50%,100% {
+    	top: 100%;
+  	}
+}
+
+
+#gopy-box  #s3{
+	position: absolute;
+	top: 98%;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, rgb(255,217,102));
+	animation: anim3 1s linear infinite;
+	animation-delay: 0.5s;
+}
+
+@keyframes anim3{
+	0%{
+		right: -100%;
+	}
+	50%,100%{
+		right: 100%;
+	}
+}
+
+#gopy-box #submit-box  #s4{
+	position: absolute;
+	bottom: -100%;
+	  left: 0;
+	  width: 2px;
+	  height: 100%;
+	  background: linear-gradient(360deg, transparent, rgb(255,217,102));
+	  animation: btn-anim4 1s linear infinite;
+	  animation-delay: .75s;
+
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
